@@ -9,12 +9,10 @@
 </head>
 <body class="min-h-screen flex items-center justify-center overflow-hidden">
 
-
   <!-- Giant fridge door (full screen) -->
   <div id="fridgeDoor" class="fridge-door">
     <div class="handle"></div>
   </div>
-
 
   <!-- Logon page behind the door -->
   <main class="relative z-10 w-full max-w-md auth-card" id="authCard">
@@ -22,13 +20,11 @@
       <h1 class="text-3xl font-bold text-center mb-2 text-green-700">🥦 Fridge Friend 🥕</h1>
       <p class="text-gray-700 text-center mb-6">Keep your fridge fresh, track groceries, and stay healthy!</p>
 
-
       <!-- Tabs -->
       <div class="flex justify-around mb-6 border-b">
         <button id="login-tab" class="tab-button active px-4 py-2 font-semibold">Login</button>
         <button id="create-account-tab" class="tab-button px-4 py-2 font-semibold">Create Account</button>
       </div>
-
 
       <!-- Login form -->
       <form id="logon-form" class="space-y-4 active-form">
@@ -43,7 +39,6 @@
         <button type="submit" class="w-full bg-green-600 text-white p-2 rounded hover:bg-green-700">Login</button>
       </form>
 
-
       <!-- Create account form -->
       <form id="create-account-form" class="space-y-4 hidden">
         <div>
@@ -54,18 +49,17 @@
           <label for="create-password" class="block text-sm font-medium">Password</label>
           <input type="password" id="create-password" class="w-full p-2 border rounded" placeholder="At least 6 characters" required>
         </div>
+        <div>
+          <label for="confirm-password" class="block text-sm font-medium">Confirm Password</label>
+          <input type="password" id="confirm-password" class="w-full p-2 border rounded" placeholder="Re-enter your password" required>
+        </div>
         <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Create Account</button>
       </form>
-
 
       <p id="message" class="text-center text-sm mt-4"></p>
     </div>
   </main>
 
-
   <script src="js/logon.js"></script>
 </body>
 </html>
-
-
-
